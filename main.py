@@ -4,7 +4,6 @@ mcp = FastMCP("Google Sheets")
 
 @mcp.tool()
 def hello():
-    return "Google Sheets MCP server is running."
+    return "Hello from Google Sheets."
 
-if __name__ == "__main__":
-    mcp.run()
+app = mcp.http_app()
